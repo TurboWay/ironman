@@ -20,19 +20,19 @@
 ## 示例
 
 ### 折线图
-![image](https://github.com/TurboWay/ironman/blob/master/example/line.jpg)
+![image](https://github.com/TurboWay/imgstore/blob/master/ironman/line.jpg)
 
 ### 柱形图
-![image](https://github.com/TurboWay/ironman/blob/master/example/bar.jpg)
+![image](https://github.com/TurboWay/imgstore/blob/master/ironman/bar.jpg)
 
 ### 饼图
-![image](https://github.com/TurboWay/ironman/blob/master/example/pie.jpg)
+![image](https://github.com/TurboWay/imgstore/blob/master/ironman/pie.jpg)
 
 ### 中国地图
-![image](https://github.com/TurboWay/ironman/blob/master/example/china.jpg)
+![image](https://github.com/TurboWay/imgstore/blob/master/ironman/china.jpg)
 
 ### 词云
-![image](https://github.com/TurboWay/ironman/blob/master/example/wordcloud.jpg)
+![image](https://github.com/TurboWay/imgstore/blob/master/ironman/wordcloud.jpg)
 
 ## 参考
 
