@@ -1,16 +1,5 @@
 ﻿{% extends "layout.html" %}
 
-{% block left %}
-<div class="col-sm-3 col-md-2 sidebar">
-  <ul class="nav nav-sidebar">
-    <li><a href="/line">折线图</a></li>
-    <li class="active"><a href="/bar">柱形图</a></li>
-    <li><a href="/pie">饼图</a></li>
-    <li><a href="/china">地图</a></li>
-    <li><a href="/wordcloud">词云</a></li>
-  </ul>
-</div>
-{% endblock %}        
         
 {% block right %}
 <!--右边展示-->
@@ -36,7 +25,6 @@ var myChart = echarts.init(document.getElementById('main'));
 
 // 指定图表的配置项和数据
 var option = {
-
         legend: {
             top: 10,
             width: 500,
@@ -67,7 +55,7 @@ var option = {
         yAxis: [{
             type: 'value',
             min: 1,
-            name:"单位：元",
+            name:"{{unit}}",
             axisTick:{
                 show:true
             },
@@ -85,9 +73,9 @@ var option = {
             }
         },
         series: [
-        {% for key, value in data.items() %}
+        {% for value in data %}
           {
-              name: '{{key}}',
+              name: '{{value['name']}}',
               type: 'bar',
               itemStyle:{
                 normal:{
@@ -100,7 +88,7 @@ var option = {
                       position: 'top'
                       }
           },
-              data: {{value|safe}}
+              data: {{value['values']|safe}}
           },
         {% endfor %}
         ]

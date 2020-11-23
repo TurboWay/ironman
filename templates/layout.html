@@ -39,7 +39,19 @@
       <div class="row">
       <!--左边栏-->
       {% block left %}
-      
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a href="/line">折线图</a></li>
+                <li><a href="/bar">柱形图</a></li>
+                <li><a href="/bar_y">柱形图-横柱</a></li>
+                <li><a href="/bar_polar">柱形图-极坐标</a></li>
+                <li><a href="/bar_waterfall">柱形图-瀑布</a></li>
+                <li><a href="/pie">饼图</a></li>
+                <li><a href="/pie_doughnut">饼图-空心</a></li>
+                <li><a href="/china">地图</a></li>
+                <li><a href="/wordcloud">词云</a></li>
+            </ul>
+        </div>
       {% endblock %}
           <!--右边展示-->
           {% block right%} 

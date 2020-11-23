@@ -24,31 +24,36 @@
     var myChart = echarts.init(document.getElementById('main'));
     // 指定图表的配置项和数据
     var option = {
-    title: {
-    },
     tooltip: {
         trigger: 'item',
-        formatter: '{a} <br/>{b} : {c} ({d}%)'
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
     },
     legend: {
         orient: 'vertical',
-        left: 'left',
+        left: 10,
         data: {{legend|safe}}
     },
     series: [
         {
             name: '{{unit}}',
             type: 'pie',
-            radius: '55%',
-            center: ['50%', '60%'],
-            data: {{data|safe}},
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                show: false,
+                position: 'center'
+            },
             emphasis: {
-                itemStyle: {
-                    shadowBlur: 10,
-                    shadowOffsetX: 0,
-                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                label: {
+                    show: true,
+                    fontSize: '30',
+                    fontWeight: 'bold'
                 }
-            }
+            },
+            labelLine: {
+                show: false
+            },
+            data: {{data|safe}}
         }
     ]
 };

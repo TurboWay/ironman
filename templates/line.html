@@ -1,17 +1,5 @@
 ﻿{% extends "layout.html" %}
 
-{% block left %}
-<div class="col-sm-3 col-md-2 sidebar">
-    <ul class="nav nav-sidebar">
-        <li class="active"><a href="/line">折线图</a></li>
-        <li><a href="/bar">柱形图</a></li>
-        <li><a href="/pie">饼图</a></li>
-        <li><a href="/china">地图</a></li>
-        <li><a href="/wordcloud">词云</a></li>
-    </ul>
-</div>
-{% endblock %}
-
 {% block right %}
 <!--右边展示-->
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -69,17 +57,18 @@
                 data: {{xAxis|safe}}
             },
             yAxis: {
+                name: '{{unit}}',
                 type: 'value',
                 axisLabel: {
                     formatter: '{value}'
                 }
             },
             series: [
-            {% for key, value in data.items() %}
+            {% for value in data %}
                 {
-                    name:'{{key}}',
+                    name:'{{value['name']}}',
                     type:'line',
-                    data:{{value|safe}},
+                    data:{{value['values']|safe}},
                     barGap: 0,
                     markPoint: {
                         data: [

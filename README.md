@@ -20,19 +20,31 @@
 ## 示例
 
 ### 折线图
-![image](https://github.com/TurboWay/imgstore/blob/master/ironman/line.jpg)
+![image-20201123194018830](https://gitee.com/TurboWay/blogimg/raw/master/img/image-20201123194018830.png)
 
 ### 柱形图
-![image](https://github.com/TurboWay/imgstore/blob/master/ironman/bar.jpg)
+![image-20201123194045254](https://gitee.com/TurboWay/blogimg/raw/master/img/image-20201123194045254.png)
+
+### 柱形图-横柱
+![image-20201123194107157](https://gitee.com/TurboWay/blogimg/raw/master/img/image-20201123194107157.png)
+
+### 柱形图-极坐标
+![image-20201123194124600](https://gitee.com/TurboWay/blogimg/raw/master/img/image-20201123194124600.png)
+
+### 柱形图-瀑布
+![image-20201123194144502](https://gitee.com/TurboWay/blogimg/raw/master/img/image-20201123194144502.png)
 
 ### 饼图
-![image](https://github.com/TurboWay/imgstore/blob/master/ironman/pie.jpg)
+![image-20201123194205589](https://gitee.com/TurboWay/blogimg/raw/master/img/image-20201123194205589.png)
+
+### 饼图-环形
+![image-20201123194226636](https://gitee.com/TurboWay/blogimg/raw/master/img/image-20201123194226636.png)
 
 ### 中国地图
-![image](https://github.com/TurboWay/imgstore/blob/master/ironman/china.jpg)
+![image-20201123194239970](https://gitee.com/TurboWay/blogimg/raw/master/img/image-20201123194239970.png)
 
 ### 词云
-![image](https://github.com/TurboWay/imgstore/blob/master/ironman/wordcloud.jpg)
+![image-20201123194249695](https://gitee.com/TurboWay/blogimg/raw/master/img/image-20201123194249695.png)
 
 ## 参考
 
